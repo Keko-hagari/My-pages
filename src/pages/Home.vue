@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>自己紹介</h1>
-    <img src="@/assets/cat.jpg" alt="cat" class="cat-image">
+    <img src="@/assets/men.jpg" alt="cat" class="cat-image" />
     <div class="content">
       <p class="content__title">名前</p>
       <p>葉狩 康憲</p>
@@ -20,14 +20,11 @@
   </div>
 </template>
 
-<script >
-
+<script>
 export default {
-  name: 'Home',
-  components: {
-   
-  }
-}
+  name: "Home",
+  components: {},
+};
 </script>
 
 <style lang="css" scoped>
@@ -40,14 +37,14 @@ h1 {
   display: block;
   margin: 10px auto;
 }
-.content{
+.content {
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.content__title{
+.content__title {
   font-size: 30px;
-  color: gray;
+  color: #3E5C76;
   line-height: 28px;
   margin-right: 10px;
 }
@@ -59,5 +56,9 @@ p {
   text-align: center;
   font-size: 25px;
   text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #631D76;
 }
 </style>

@@ -1,27 +1,32 @@
 <template>
   <div id="app">
-    <HeaderItem/>
-    <router-view/>
-    <FooterItem/>
+    <HeaderItem />
+      <main>
+        <router-view />
+      </main>
+    <FooterItem />
   </div>
 </template>
 
 <script>
-import HeaderItem from './components/HeaderItem'
-import FooterItem from './components/FooterItem'
+import HeaderItem from "./components/HeaderItem";
+import FooterItem from "./components/FooterItem";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-   HeaderItem,
-   FooterItem
+    HeaderItem,
+    FooterItem,
   },
-}
+};
 </script>
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  min-height: 85vh;
+}
 </style>
